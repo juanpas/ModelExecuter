@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2BF3A594-9973-491C-9129-2C886CEFAE18}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BuildingBlock.Repository</RootNamespace>
+    <AssemblyName>BuildingBlock.Repository</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.1\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.EntityFramework, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.EntityFramework.2.2.1\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Configuration\ProductQuotationActivityConfiguration.cs" />
+    <Compile Include="Configuration\ProductSellerConfiguration.cs" />
+    <Compile Include="Configuration\CompanyConfiguration.cs" />
+    <Compile Include="Configuration\CityConfiguration.cs" />
+    <Compile Include="Configuration\ModuleConfiguration.cs" />
+    <Compile Include="Configuration\ExtendedProductConfiguration.cs" />
+    <Compile Include="Configuration\ProductQuotationConfiguration.cs" />
+    <Compile Include="Configuration\ProductSettingConfiguration.cs" />
+    <Compile Include="Configuration\TextResourceConfiguration.cs" />
+    <Compile Include="Configuration\ProductConfiguration.cs" />
+    <Compile Include="Configuration\LeadConfiguration.cs" />
+    <Compile Include="Configuration\ServiceConfiguration.cs" />
+    <Compile Include="Configuration\ParameterConfiguration.cs" />
+    <Compile Include="Contracts\ICompanyRepository.cs" />
+    <Compile Include="Contracts\IMainUow.cs" />
+    <Compile Include="Contracts\ICityRepository.cs" />
+    <Compile Include="Contracts\IFileRepository.cs" />
+    <Compile Include="Contracts\IProductQuotationRepository.cs" />
+    <Compile Include="Contracts\IProductSettingRepository.cs" />
+    <Compile Include="Contracts\IModuleRepository.cs" />
+    <Compile Include="Contracts\ILeadRepository.cs" />
+    <Compile Include="Contracts\IPhotoRepository.cs" />
+    <Compile Include="Contracts\IProductQuotationActivityRepository.cs" />
+    <Compile Include="Contracts\ITextResourceRepository.cs" />
+    <Compile Include="Contracts\IProductRepository.cs" />
+    <Compile Include="Contracts\IServiceRepository.cs" />
+    <Compile Include="Contracts\IParameterRepository.cs" />
+    <Compile Include="Contracts\IRepository.cs" />
+    <Compile Include="Contracts\IRepositoryProvider.cs" />
+    <Compile Include="MainDbContext.cs" />
+    <Compile Include="MainUow.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\CompanyRepository.cs" />
+    <Compile Include="Repositories\EFRepository.cs" />
+    <Compile Include="Repositories\CityRepository.cs" />
+    <Compile Include="Repositories\FileRepository.cs" />
+    <Compile Include="Repositories\ProductQuotationRepository.cs" />
+    <Compile Include="Repositories\ProductSettingRepository.cs" />
+    <Compile Include="Repositories\ModuleRepository.cs" />
+    <Compile Include="Repositories\LeadRepository.cs" />
+    <Compile Include="Repositories\PhotoRepository.cs" />
+    <Compile Include="Repositories\ProductQuotationActivityRepository.cs" />
+    <Compile Include="Repositories\TextResourceRepository.cs" />
+    <Compile Include="Repositories\ProductRepository.cs" />
+    <Compile Include="Repositories\ServiceRepository.cs" />
+    <Compile Include="Repositories\ParameterRepository.cs" />
+    <Compile Include="RepositoryFactories.cs" />
+    <Compile Include="RepositoryProvider.cs" />
+    <Compile Include="SampleData\MainDatabaseInitializer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+    <None Include="SampleData\DataInitializer.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BuildingBlock.Defs\BuildingBlock.Defs.csproj">
+      <Project>{189f1c3b-5fc4-4db5-9b70-cdb035066500}</Project>
+      <Name>BuildingBlock.Defs</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BuildingBlock.IdentityManager\BuildingBlock.IdentityManager.csproj">
+      <Project>{7136053b-febe-4bc6-8b71-e8f9226872a0}</Project>
+      <Name>BuildingBlock.IdentityManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BuildingBlock.IdentityModel\BuildingBlock.IdentityModel.csproj">
+      <Project>{e9a4998e-c829-46f0-9f4d-f241136f56f4}</Project>
+      <Name>BuildingBlock.IdentityModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BuildingBlock.Model\BuildingBlock.Model.csproj">
+      <Project>{fe286d68-ce31-4030-bec5-69390b3d26e6}</Project>
+      <Name>BuildingBlock.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

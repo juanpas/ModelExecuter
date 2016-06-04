@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FE286D68-CE31-4030-BEC5-69390B3D26E6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BuildingBlock.Model</RootNamespace>
+    <AssemblyName>BuildingBlock.Model</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.AspNet.Identity.EntityFramework, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Country.cs" />
+    <Compile Include="City.cs" />
+    <Compile Include="File.cs" />
+    <Compile Include="ProductQuotationActivity.cs" />
+    <Compile Include="ProductSeller.cs" />
+    <Compile Include="ProductQuotation.cs" />
+    <Compile Include="ProductSetting.cs" />
+    <Compile Include="ProductProvider.cs" />
+    <Compile Include="Company.cs" />
+    <Compile Include="ExtendedProduct.cs" />
+    <Compile Include="Photo.cs" />
+    <Compile Include="ModelSettings.cs" />
+    <Compile Include="Module.cs" />
+    <Compile Include="ProductBrand.cs" />
+    <Compile Include="TextResource.cs" />
+    <Compile Include="Parameter.cs" />
+    <Compile Include="Language.cs" />
+    <Compile Include="ParameterCategory.cs" />
+    <Compile Include="Lead.cs" />
+    <Compile Include="Service.cs" />
+    <Compile Include="Product.cs" />
+    <Compile Include="LeadCategory.cs" />
+    <Compile Include="ServiceCategory.cs" />
+    <Compile Include="ProductCategory.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BuildingBlock.Defs\BuildingBlock.Defs.csproj">
+      <Project>{189f1c3b-5fc4-4db5-9b70-cdb035066500}</Project>
+      <Name>BuildingBlock.Defs</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BuildingBlock.IdentityModel\BuildingBlock.IdentityModel.csproj">
+      <Project>{e9a4998e-c829-46f0-9f4d-f241136f56f4}</Project>
+      <Name>BuildingBlock.IdentityModel</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
