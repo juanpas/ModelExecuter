@@ -179,21 +179,6 @@ namespace BuildingBlock.Web.Controllers
 
                 var result = await UserManager.AddToRolesAsync(user.Id, selectedRole.Except(userRoles).ToArray<string>());
 
-                if(selectedRole.Contains("Product Seller"))
-                {
-                    if(!(Uow.ProductSellers.GetAll().Any(s => s.ApplicationUserId.ToString() == editUser.Id)))
-                    {
-                        ProductSeller productSeller = new ProductSeller()
-                        {
-                            ApplicationUserId = new Guid(editUser.Id)
-                        };
-
-                        Uow.ProductSellers.Add(productSeller);
-                        Uow.Commit();
-                    }
-
-                }
-
                 if (!result.Succeeded)
                 {
                     ModelState.AddModelError("", result.Errors.First());

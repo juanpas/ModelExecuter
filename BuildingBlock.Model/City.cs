@@ -20,13 +20,5 @@ namespace BuildingBlock.Model
         public int CountryId { get; set; }
         public Country Country { get; set; }
 
-        public Guid? ProductSalesManagerId { get; set; }
-
-        public ICollection<ProductSetting> ProductSettings { get; set; }
-
-        public ICollection<ProductSeller> ProductSellers { get; set; }
-
-        public ICollection<ProductQuotation> ProductQuotations { get; set; }
-
     }
 }

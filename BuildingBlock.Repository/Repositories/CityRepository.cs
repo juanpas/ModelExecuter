@@ -14,16 +14,6 @@ namespace BuildingBlock.Repository
             return DbSet.Include(c => c.Country).Where(p => p.Name == name).FirstOrDefault();
         }
 
-        public City GetByIdWithProductSellers(int id)
-        {
-            return DbSet.Include(c => c.Country).Include(c => c.ProductSellers).Where(c => c.Id == id).First();
-        }
-
-        public IQueryable<City> GetAllWithProductSellers()
-        {
-            return DbSet.Include(c => c.Country).Include(c => c.ProductSellers);
-        }
-
         public override City GetById(int id)
         {
             return DbSet.Include(c => c.Country).First(c => c.Id == id);

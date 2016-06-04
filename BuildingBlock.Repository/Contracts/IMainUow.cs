@@ -20,19 +20,6 @@ namespace BuildingBlock.Repository.Contracts
         IRepository<Country> Countries { get; }
         ICityRepository Cities { get; }
         ICompanyRepository Companies { get; }
-        IModuleRepository Modules { get; }
-        IRepository<ProductSeller> ProductSellers { get; }
-        IRepository<ProductCategory> ProductCategories { get; }
-        IRepository<ProductBrand> ProductBrands { get; }
-        IRepository<ProductProvider> ProductProviders { get; }
-        IProductRepository Products { get; }
-        IProductSettingRepository ProductSettings { get; }
-        IProductQuotationRepository ProductQuotations { get; }
-        IRepository<ExtendedProduct> ExtendedProducts { get; }
-        IRepository<ServiceCategory> ServiceCategories { get; }
-        IServiceRepository Services { get; }
-        IRepository<LeadCategory> LeadCategories { get; }
-        ILeadRepository Leads { get; }
 
     }
 }

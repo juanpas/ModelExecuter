@@ -44,23 +44,6 @@ namespace BuildingBlock.Repository
         public IRepository<Country> Countries { get { return GetStandardRepo<Country>(); } }
         public ICityRepository Cities { get { return GetRepo<ICityRepository>(); } }
         public ICompanyRepository Companies { get { return GetRepo<ICompanyRepository>(); } }
-        public IModuleRepository Modules { get { return GetRepo<IModuleRepository>(); } }
-
-        public IRepository<ServiceCategory> ServiceCategories { get { return GetStandardRepo<ServiceCategory>(); } }
-        public IServiceRepository Services { get { return GetRepo<IServiceRepository>(); } }
-
-        public IRepository<ProductSeller> ProductSellers { get { return GetStandardRepo<ProductSeller>(); } }
-        public IRepository<ProductCategory> ProductCategories { get { return GetStandardRepo<ProductCategory>(); } }
-        public IRepository<ProductBrand> ProductBrands { get { return GetStandardRepo<ProductBrand>(); } }
-        public IRepository<ProductProvider> ProductProviders { get { return GetStandardRepo<ProductProvider>(); } }
-        public IProductRepository Products { get { return GetRepo<IProductRepository>(); } }
-        public IProductSettingRepository ProductSettings { get { return GetRepo<IProductSettingRepository>(); } }
-        public IProductQuotationRepository ProductQuotations { get { return GetRepo<IProductQuotationRepository>(); } }
-        public IProductQuotationActivityRepository ProductQuotationActivities { get { return GetRepo<IProductQuotationActivityRepository>(); } }
-        public IRepository<ExtendedProduct> ExtendedProducts { get { return GetStandardRepo<ExtendedProduct>(); } }
-
-        public IRepository<LeadCategory> LeadCategories { get { return GetStandardRepo<LeadCategory>(); } }
-        public ILeadRepository Leads { get { return GetRepo<ILeadRepository>(); } }
 
 
         /// <summary>

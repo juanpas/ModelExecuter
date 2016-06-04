@@ -33,16 +33,9 @@ namespace BuildingBlock.Repository
             return new Dictionary<Type, Func<DbContext, object>>
                 {
                     {typeof(ICompanyRepository), dbContext => new CompanyRepository(dbContext)},
-                    {typeof(IModuleRepository), dbContext => new ModuleRepository(dbContext)},
                     {typeof(IParameterRepository), dbContext => new ParameterRepository(dbContext)},
                     {typeof(ICityRepository), dbContext => new CityRepository(dbContext)},
                     {typeof(ITextResourceRepository), dbContext => new TextResourceRepository(dbContext)},
-                    {typeof(IProductRepository), dbContext => new ProductRepository(dbContext)},
-                    {typeof(IProductSettingRepository), dbContext => new ProductSettingRepository(dbContext)},
-                    {typeof(IProductQuotationRepository), dbContext => new ProductQuotationRepository(dbContext)},
-                    {typeof(IProductQuotationActivityRepository), dbContext => new ProductQuotationActivityRepository(dbContext)},
-                    {typeof(IServiceRepository), dbContext => new ServiceRepository(dbContext)},
-                    {typeof(ILeadRepository), dbContext => new LeadRepository(dbContext)},
                     {typeof(IFileRepository), dbContext => new FileRepository(dbContext)},
                     {typeof(IPhotoRepository), dbContext => new PhotoRepository(dbContext)},
                 };

@@ -29,21 +29,6 @@ namespace BuildingBlock.Repository.SampleData
 
             var companies = AddCompanies(context);
 
-            if (Defs.Utils.ReadAppSetting<bool>("LoadDummyProducts", false))
-            {
-                var productCategories = AddProductCategories(context);
-
-                var productBrands = AddProductBrands(context);
-
-                var productProviders = AddProductProviders(context);
-
-                var products = AddProducts(context, productCategories, productBrands);
-
-                var textResources = AddTextResources(context, languages, products, productCategories);
-
-                var photos = AddPhotos(context);
-            }
-
         }
 
         private List<ParameterCategory> AddParameterCategories(MainDbContext context)
@@ -246,7 +231,7 @@ namespace BuildingBlock.Repository.SampleData
         }
 
 
-        private List<TextResource> AddTextResources(MainDbContext context, List<Language> languages, List<Product> products, List<ProductCategory> productCategories)
+        private List<TextResource> AddTextResources(MainDbContext context, List<Language> languages)
         {
             var result = new List<TextResource>();
 
@@ -266,131 +251,19 @@ namespace BuildingBlock.Repository.SampleData
                         //});
                         break;
                     case "PRODUCTCATEGORY":
-                        result.Add(new TextResource
-                        {
-                            Type = dr["Type"].ToString(),
-                            LanguageId = languages.Find(a => a.Code == dr["Language"].ToString()).Id,
-                            RelatedId = productCategories.Find(a => a.Code == dr["Related"].ToString()).Id,
-                            Value = dr["Value"].ToString()
-                        });
+                        //result.Add(new TextResource
+                        //{
+                        //    Type = dr["Type"].ToString(),
+                        //    LanguageId = languages.Find(a => a.Code == dr["Language"].ToString()).Id,
+                        //    RelatedId = productCategories.Find(a => a.Code == dr["Related"].ToString()).Id,
+                        //    Value = dr["Value"].ToString()
+                        //});
                         break;
                 }
 
             }
 
             result.ForEach(a => context.TextResources.Add(a));
-
-            context.SaveChanges();
-
-            return result;
-        }
-
-        private List<ProductCategory> AddProductCategories(MainDbContext context)
-        {
-            var productCategories = new List<ProductCategory>();
-
-            DataTable dt = ExcelHelper.GetTableFromWorkSheet(excelFileName, "ProductCategory");
-
-            foreach(DataRow dr in dt.Rows)
-            {
-                productCategories.Add(new ProductCategory
-                {
-                    Name = dr["Name"].ToString(),
-                    Code = dr["Code"].ToString(),
-                    Description = dr["Description"].ToString(),
-                    ParentCategoryId = null
-                });
-            }
-
-            productCategories.ForEach(a => context.ProductCategories.Add(a));
-
-            context.SaveChanges();
-
-            foreach (DataRow dr in dt.Rows)
-            {
-                if (dr["ParentCategory"].ToString().Length > 0)
-                {
-                    ProductCategory selected = productCategories.Find(a => a.Code == dr["Code"].ToString());
-                    ProductCategory related = productCategories.Find(a => a.Code == dr["ParentCategory"].ToString());
-
-                    selected.ParentCategoryId = related.Id;
-                }
-            }
-
-            context.SaveChanges();
-
-            return productCategories;
-        }
-
-        private List<ProductBrand> AddProductBrands(MainDbContext context)
-        {
-            var productBrands = new List<ProductBrand>();
-
-            DataTable dt = ExcelHelper.GetTableFromWorkSheet(excelFileName, "ProductBrand");
-
-            foreach (DataRow dr in dt.Rows)
-            {
-                productBrands.Add(new ProductBrand
-                {
-                    Name = dr["Name"].ToString(),
-                    Code = dr["Code"].ToString()
-                });
-            }
-
-            productBrands.ForEach(a => context.ProductBrands.Add(a));
-
-            context.SaveChanges();
-
-            return productBrands;
-        }
-
-        private List<ProductProvider> AddProductProviders(MainDbContext context)
-        {
-            var productProviders = new List<ProductProvider>();
-
-            DataTable dt = ExcelHelper.GetTableFromWorkSheet(excelFileName, "ProductProvider");
-
-            foreach (DataRow dr in dt.Rows)
-            {
-                productProviders.Add(new ProductProvider
-                {
-                    Name = dr["Name"].ToString(),
-                    Code = dr["Code"].ToString()
-                });
-            }
-
-            productProviders.ForEach(a => context.ProductProviders.Add(a));
-
-            context.SaveChanges();
-
-            return productProviders;
-        }
-
-        private List<Product> AddProducts(MainDbContext context, List<ProductCategory> productCategories, List<ProductBrand> productBrands)
-        {
-            var result = new List<Product>();
-
-            DataTable dt = ExcelHelper.GetTableFromWorkSheet(excelFileName, "Product");
-
-            foreach (DataRow dr in dt.Rows)
-            {
-                result.Add(new Product
-                {
-                    Name = dr["Name"].ToString(),
-                    Code = dr["Code"].ToString(),
-                    ShortDescription = dr["ShortDescription"].ToString(),
-                    Description = dr["Description"].ToString(),
-                    Details = dr["Details"].ToString(),
-                    TechnicalInfo = dr["TechnicalInfo"].ToString(),
-                    DeliveryInfo = dr["DeliveryInfo"].ToString(),
-                    Keywords = dr["Keywords"].ToString(),
-                    Price = float.Parse(dr["Price"].ToString()),
-                    CategoryId = productCategories.Find(a => a.Code == dr["Category"].ToString()).Id,
-                    BrandId = productBrands.Find(a => a.Code == dr["Brand"].ToString()).Id
-                });
-            }
-
-            result.ForEach(a => context.Products.Add(a));
 
             context.SaveChanges();
 
