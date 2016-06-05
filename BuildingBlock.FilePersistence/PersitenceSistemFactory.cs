@@ -10,8 +10,12 @@ namespace BuildingBlock.FilePersistence
 
             switch (systemType)
             {
-                case FilePersistenceSystemType.Azure :
-                    persistenceSystem = new AzurePersistenceSystem(fileType, fileSubType, folder);
+                case FilePersistenceSystemType.AzureFile :
+                    persistenceSystem = new AzureFilePersistenceSystem(fileType, fileSubType, folder);
+                    break;
+
+                case FilePersistenceSystemType.AzureBlob :
+                    persistenceSystem = new AzureBlobPersistenceSystem(fileType, fileSubType, folder);
                     break;
 
                 case FilePersistenceSystemType.Local:

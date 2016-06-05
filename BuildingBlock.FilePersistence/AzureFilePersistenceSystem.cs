@@ -10,7 +10,7 @@ using Microsoft.WindowsAzure.Storage.File;
 
 namespace BuildingBlock.FilePersistence
 {
-    internal class AzurePersistenceSystem : PersistenceSystem, IPersistenceSystem
+    internal class AzureFilePersistenceSystem : PersistenceSystem, IPersistenceSystem
     {
         private CloudFileDirectory fileDirectory = null;
 
@@ -22,7 +22,7 @@ namespace BuildingBlock.FilePersistence
             }
         }
 
-        public AzurePersistenceSystem(Enums.FileType fileType, Enums.FileSubType fileSubType, string folder) : base(fileType, fileSubType, folder)
+        public AzureFilePersistenceSystem(Enums.FileType fileType, Enums.FileSubType fileSubType, string folder) : base(fileType, fileSubType, folder)
         {
             CloudStorageAccount storageAccount = CloudStorageAccount.Parse(CloudConfigurationManager.GetSetting("StorageConnectionString"));
 

@@ -87,7 +87,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AzurePersistenceSystem.cs" />
+    <Compile Include="AzureFilePersistenceSystem.cs" />
+    <Compile Include="AzureBlobPersistenceSystem.cs" />
     <Compile Include="IPersistenceSystem.cs" />
     <Compile Include="LocalPersistenceSystem.cs" />
     <Compile Include="PersistenceSystem.cs" />

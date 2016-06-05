@@ -19,20 +19,20 @@ namespace BuildingBlock.Defs
 
         public enum FileType
         {
-            Photo = 1,
-            Document = 2
+            Modelo = 1,
+            Photo = 21
         }
 
         public enum FileSubType
         {
-            ProductPhoto = 1,
-            ProductQuotationDocument = 21
+            ModeloFinanciero = 1
         }
 
         public enum FilePersistenceSystemType
         {
             Local = 1,
-            Azure
+            AzureFile,
+            AzureBlob
         }
 
     }

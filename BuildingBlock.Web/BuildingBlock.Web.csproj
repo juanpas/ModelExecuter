@@ -240,6 +240,7 @@
     <Compile Include="Controllers\API\ApiFileController.cs" />
     <Compile Include="Controllers\API\EPApiController.cs" />
     <Compile Include="Controllers\BBController.cs" />
+    <Compile Include="Controllers\ModeloFinancieroController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\Identity\AccountController.cs" />
     <Compile Include="Controllers\Identity\ManageController.cs" />
@@ -398,6 +399,7 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\ModeloFinanciero\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
