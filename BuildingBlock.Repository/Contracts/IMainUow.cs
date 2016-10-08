@@ -1,6 +1,6 @@
-﻿using BuildingBlock.Model;
+﻿using ModelExecuter.Model;
 
-namespace BuildingBlock.Repository.Contracts
+namespace ModelExecuter.Repository.Contracts
 {
     /// <summary>
     /// Interface for the PhotoFeels "Unit of Work"

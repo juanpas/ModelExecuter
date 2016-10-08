@@ -1,7 +1,7 @@
 ﻿using System.IO;
 using System.Net.Http;
 
-namespace BuildingBlock.FilePersistence
+namespace ModelExecuter.FilePersistence
 {
     public interface IPersistenceSystem
     {

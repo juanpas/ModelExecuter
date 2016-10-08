@@ -7,8 +7,8 @@
     <ProjectGuid>{AD98465B-6866-4CAB-A00D-38BDB70B79BF}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BuildingBlock.FilePersistence</RootNamespace>
-    <AssemblyName>BuildingBlock.FilePersistence</AssemblyName>
+    <RootNamespace>ModelExecuter.FilePersistence</RootNamespace>
+    <AssemblyName>ModelExecuter.FilePersistence</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -100,9 +100,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BuildingBlock.Defs\BuildingBlock.Defs.csproj">
+    <ProjectReference Include="..\BuildingBlock.Defs\ModelExecuter.Defs.csproj">
       <Project>{189f1c3b-5fc4-4db5-9b70-cdb035066500}</Project>
-      <Name>BuildingBlock.Defs</Name>
+      <Name>ModelExecuter.Defs</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -8,11 +8,11 @@ using System.Web.Mvc;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
-using BuildingBlock.Web.Models;
-using BuildingBlock.IdentityModel;
-using BuildingBlock.IdentityManager;
+using ModelExecuter.Web.Models;
+using ModelExecuter.IdentityModel;
+using ModelExecuter.IdentityManager;
 
-namespace BuildingBlock.Web.Controllers
+namespace ModelExecuter.Web.Controllers
 {
     [Authorize]
     public class AccountController : Controller

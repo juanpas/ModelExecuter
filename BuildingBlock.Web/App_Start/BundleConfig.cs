@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Optimization;
 
-namespace BuildingBlock.Web
+namespace ModelExecuter.Web
 {
     public class BundleConfig
     {

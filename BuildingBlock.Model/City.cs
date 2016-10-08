@@ -1,11 +1,11 @@
-﻿using BuildingBlock.IdentityModel;
+﻿using ModelExecuter.IdentityModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BuildingBlock.Model
+namespace ModelExecuter.Model
 {
     public class City
     {

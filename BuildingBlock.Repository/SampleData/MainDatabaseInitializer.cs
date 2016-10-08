@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data.Entity;
-using BuildingBlock.Defs;
-using BuildingBlock.Model;
+using ModelExecuter.Defs;
+using ModelExecuter.Model;
 using System.Data;
 using System.Web;
 
-namespace BuildingBlock.Repository.SampleData
+namespace ModelExecuter.Repository.SampleData
 {
     //public class MainDatabaseInitializer :
     //    CreateDatabaseIfNotExists<MainDbContext>

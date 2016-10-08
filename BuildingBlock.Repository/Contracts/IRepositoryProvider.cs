@@ -2,7 +2,7 @@
 using System.Data.Entity;
 
 
-namespace BuildingBlock.Repository.Contracts
+namespace ModelExecuter.Repository.Contracts
 {
     /// <summary>
     /// Interface for a class that can provide repositories by type.

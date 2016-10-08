@@ -1,16 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{2BF3A594-9973-491C-9129-2C886CEFAE18}</ProjectGuid>
+    <ProjectGuid>{E9A4998E-C829-46F0-9F4D-F241136F56F4}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BuildingBlock.Repository</RootNamespace>
-    <AssemblyName>BuildingBlock.Repository</AssemblyName>
+    <RootNamespace>ModelExecuter.IdentityModel</RootNamespace>
+    <AssemblyName>ModelExecuter.IdentityModel</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -46,68 +47,51 @@
       <HintPath>..\packages\Microsoft.AspNet.Identity.EntityFramework.2.2.1\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Owin, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Owin.2.2.1\lib\net45\Microsoft.AspNet.Identity.Owin.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Owin, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.3.0.1\lib\net45\Microsoft.Owin.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Security.3.0.1\lib\net45\Microsoft.Owin.Security.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Cookies, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Security.Cookies.3.0.1\lib\net45\Microsoft.Owin.Security.Cookies.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.OAuth, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Security.OAuth.3.0.1\lib\net45\Microsoft.Owin.Security.OAuth.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.8.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Owin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f0ebd12fd5e55cc5, processorArchitecture=MSIL">
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Configuration\CompanyConfiguration.cs" />
-    <Compile Include="Configuration\CityConfiguration.cs" />
-    <Compile Include="Configuration\TextResourceConfiguration.cs" />
-    <Compile Include="Configuration\ParameterConfiguration.cs" />
-    <Compile Include="Contracts\ICompanyRepository.cs" />
-    <Compile Include="Contracts\IMainUow.cs" />
-    <Compile Include="Contracts\ICityRepository.cs" />
-    <Compile Include="Contracts\IFileRepository.cs" />
-    <Compile Include="Contracts\IPhotoRepository.cs" />
-    <Compile Include="Contracts\ITextResourceRepository.cs" />
-    <Compile Include="Contracts\IParameterRepository.cs" />
-    <Compile Include="Contracts\IRepository.cs" />
-    <Compile Include="Contracts\IRepositoryProvider.cs" />
-    <Compile Include="MainDbContext.cs" />
-    <Compile Include="MainUow.cs" />
+    <Compile Include="ApplicationUser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Repositories\CompanyRepository.cs" />
-    <Compile Include="Repositories\EFRepository.cs" />
-    <Compile Include="Repositories\CityRepository.cs" />
-    <Compile Include="Repositories\FileRepository.cs" />
-    <Compile Include="Repositories\PhotoRepository.cs" />
-    <Compile Include="Repositories\TextResourceRepository.cs" />
-    <Compile Include="Repositories\ParameterRepository.cs" />
-    <Compile Include="RepositoryFactories.cs" />
-    <Compile Include="RepositoryProvider.cs" />
-    <Compile Include="SampleData\MainDatabaseInitializer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
-    <None Include="SampleData\DataInitializer.xlsx">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\BuildingBlock.Defs\BuildingBlock.Defs.csproj">
-      <Project>{189f1c3b-5fc4-4db5-9b70-cdb035066500}</Project>
-      <Name>BuildingBlock.Defs</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\BuildingBlock.IdentityManager\BuildingBlock.IdentityManager.csproj">
-      <Project>{7136053b-febe-4bc6-8b71-e8f9226872a0}</Project>
-      <Name>BuildingBlock.IdentityManager</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\BuildingBlock.IdentityModel\BuildingBlock.IdentityModel.csproj">
-      <Project>{e9a4998e-c829-46f0-9f4d-f241136f56f4}</Project>
-      <Name>BuildingBlock.IdentityModel</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\BuildingBlock.Model\BuildingBlock.Model.csproj">
-      <Project>{fe286d68-ce31-4030-bec5-69390b3d26e6}</Project>
-      <Name>BuildingBlock.Model</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

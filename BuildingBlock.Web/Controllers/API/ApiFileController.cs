@@ -1,8 +1,8 @@
-﻿using BuildingBlock.Defs;
-using BuildingBlock.FilePersistence;
-using BuildingBlock.Model;
-using BuildingBlock.Repository.Contracts;
-using BuildingBlock.Web.Models;
+﻿using ModelExecuter.Defs;
+using ModelExecuter.FilePersistence;
+using ModelExecuter.Model;
+using ModelExecuter.Repository.Contracts;
+using ModelExecuter.Web.Models;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -15,9 +15,9 @@ using System.Net.Http.Headers;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Http;
-using static BuildingBlock.Defs.Enums;
+using static ModelExecuter.Defs.Enums;
 
-namespace BuildingBlock.Web.Controllers
+namespace ModelExecuter.Web.Controllers
 {
     public class ApiFileController : EPApiController
     {

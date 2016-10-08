@@ -1,6 +1,6 @@
-﻿using BuildingBlock.Defs;
-using BuildingBlock.Model;
-using BuildingBlock.Repository.Contracts;
+﻿using ModelExecuter.Defs;
+using ModelExecuter.Model;
+using ModelExecuter.Repository.Contracts;
 using SendGrid;
 using System;
 using System.Collections.Generic;
@@ -12,7 +12,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Web;
 
-namespace BuildingBlock.Web.Utils
+namespace ModelExecuter.Web.Utils
 {
     public class Utils
     {

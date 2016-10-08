@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data.Entity;
-using BuildingBlock.Repository.Contracts;
+using ModelExecuter.Repository.Contracts;
 
-namespace BuildingBlock.Repository
+namespace ModelExecuter.Repository
 {
     /// <summary>
     /// A maker of Repositories.

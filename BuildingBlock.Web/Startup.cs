@@ -1,8 +1,8 @@
 ﻿using Microsoft.Owin;
 using Owin;
 
-[assembly: OwinStartupAttribute(typeof(BuildingBlock.Web.Startup))]
-namespace BuildingBlock.Web
+[assembly: OwinStartupAttribute(typeof(ModelExecuter.Web.Startup))]
+namespace ModelExecuter.Web
 {
     public partial class Startup
     {

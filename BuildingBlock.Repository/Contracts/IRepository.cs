@@ -1,6 +1,6 @@
 ﻿using System.Linq;
 
-namespace BuildingBlock.Repository.Contracts
+namespace ModelExecuter.Repository.Contracts
 {
     public interface IRepository<T> where T : class
     {

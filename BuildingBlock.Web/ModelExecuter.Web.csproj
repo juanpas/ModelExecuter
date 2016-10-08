@@ -13,8 +13,8 @@
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BuildingBlock.Web</RootNamespace>
-    <AssemblyName>BuildingBlock.Web</AssemblyName>
+    <RootNamespace>ModelExecuter.Web</RootNamespace>
+    <AssemblyName>ModelExecuter.Web</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
@@ -410,29 +410,29 @@
     <Content Include="Scripts\jquery-2.2.3.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BuildingBlock.Defs\BuildingBlock.Defs.csproj">
+    <ProjectReference Include="..\BuildingBlock.Defs\ModelExecuter.Defs.csproj">
       <Project>{189f1c3b-5fc4-4db5-9b70-cdb035066500}</Project>
-      <Name>BuildingBlock.Defs</Name>
+      <Name>ModelExecuter.Defs</Name>
     </ProjectReference>
-    <ProjectReference Include="..\BuildingBlock.FilePersistence\BuildingBlock.FilePersistence.csproj">
+    <ProjectReference Include="..\BuildingBlock.FilePersistence\ModelExecuter.FilePersistence.csproj">
       <Project>{ad98465b-6866-4cab-a00d-38bdb70b79bf}</Project>
-      <Name>BuildingBlock.FilePersistence</Name>
+      <Name>ModelExecuter.FilePersistence</Name>
     </ProjectReference>
-    <ProjectReference Include="..\BuildingBlock.IdentityManager\BuildingBlock.IdentityManager.csproj">
+    <ProjectReference Include="..\BuildingBlock.IdentityManager\ModelExecuter.IdentityManager.csproj">
       <Project>{7136053b-febe-4bc6-8b71-e8f9226872a0}</Project>
-      <Name>BuildingBlock.IdentityManager</Name>
+      <Name>ModelExecuter.IdentityManager</Name>
     </ProjectReference>
-    <ProjectReference Include="..\BuildingBlock.IdentityModel\BuildingBlock.IdentityModel.csproj">
+    <ProjectReference Include="..\BuildingBlock.IdentityModel\ModelExecuter.IdentityModel.csproj">
       <Project>{e9a4998e-c829-46f0-9f4d-f241136f56f4}</Project>
-      <Name>BuildingBlock.IdentityModel</Name>
+      <Name>ModelExecuter.IdentityModel</Name>
     </ProjectReference>
-    <ProjectReference Include="..\BuildingBlock.Model\BuildingBlock.Model.csproj">
+    <ProjectReference Include="..\BuildingBlock.Model\ModelExecuter.Model.csproj">
       <Project>{fe286d68-ce31-4030-bec5-69390b3d26e6}</Project>
-      <Name>BuildingBlock.Model</Name>
+      <Name>ModelExecuter.Model</Name>
     </ProjectReference>
-    <ProjectReference Include="..\BuildingBlock.Repository\BuildingBlock.Repository.csproj">
+    <ProjectReference Include="..\BuildingBlock.Repository\ModelExecuter.Repository.csproj">
       <Project>{2bf3a594-9973-491c-9129-2c886cefae18}</Project>
-      <Name>BuildingBlock.Repository</Name>
+      <Name>ModelExecuter.Repository</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

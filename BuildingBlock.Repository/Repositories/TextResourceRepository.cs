@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
-using BuildingBlock.Repository.Contracts;
-using BuildingBlock.Model;
+using ModelExecuter.Repository.Contracts;
+using ModelExecuter.Model;
 using System.Reflection;
 
-namespace BuildingBlock.Repository
+namespace ModelExecuter.Repository
 {
     public class TextResourceRepository : EFRepository<TextResource>, ITextResourceRepository
     {

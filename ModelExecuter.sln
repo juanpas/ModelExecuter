@@ -1,23 +1,23 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildingBlock.Web", "BuildingBlock.Web\BuildingBlock.Web.csproj", "{3FA971A8-1D36-4CA7-9FD8-4BDD35044C10}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModelExecuter.Web", "BuildingBlock.Web\ModelExecuter.Web.csproj", "{3FA971A8-1D36-4CA7-9FD8-4BDD35044C10}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildingBlock.Web.Tests", "BuildingBlock.Web.Tests\BuildingBlock.Web.Tests.csproj", "{1456E908-12F0-4A30-9F47-5A5A327750B7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModelExecuter.Web.Tests", "BuildingBlock.Web.Tests\ModelExecuter.Web.Tests.csproj", "{1456E908-12F0-4A30-9F47-5A5A327750B7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildingBlock.Defs", "BuildingBlock.Defs\BuildingBlock.Defs.csproj", "{189F1C3B-5FC4-4DB5-9B70-CDB035066500}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModelExecuter.Defs", "BuildingBlock.Defs\ModelExecuter.Defs.csproj", "{189F1C3B-5FC4-4DB5-9B70-CDB035066500}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildingBlock.FilePersistence", "BuildingBlock.FilePersistence\BuildingBlock.FilePersistence.csproj", "{AD98465B-6866-4CAB-A00D-38BDB70B79BF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModelExecuter.FilePersistence", "BuildingBlock.FilePersistence\ModelExecuter.FilePersistence.csproj", "{AD98465B-6866-4CAB-A00D-38BDB70B79BF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildingBlock.IdentityModel", "BuildingBlock.IdentityModel\BuildingBlock.IdentityModel.csproj", "{E9A4998E-C829-46F0-9F4D-F241136F56F4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModelExecuter.IdentityModel", "BuildingBlock.IdentityModel\ModelExecuter.IdentityModel.csproj", "{E9A4998E-C829-46F0-9F4D-F241136F56F4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildingBlock.IdentityManager", "BuildingBlock.IdentityManager\BuildingBlock.IdentityManager.csproj", "{7136053B-FEBE-4BC6-8B71-E8F9226872A0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModelExecuter.IdentityManager", "BuildingBlock.IdentityManager\ModelExecuter.IdentityManager.csproj", "{7136053B-FEBE-4BC6-8B71-E8F9226872A0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildingBlock.Model", "BuildingBlock.Model\BuildingBlock.Model.csproj", "{FE286D68-CE31-4030-BEC5-69390B3D26E6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModelExecuter.Model", "BuildingBlock.Model\ModelExecuter.Model.csproj", "{FE286D68-CE31-4030-BEC5-69390B3D26E6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildingBlock.Repository", "BuildingBlock.Repository\BuildingBlock.Repository.csproj", "{2BF3A594-9973-491C-9129-2C886CEFAE18}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModelExecuter.Repository", "BuildingBlock.Repository\ModelExecuter.Repository.csproj", "{2BF3A594-9973-491C-9129-2C886CEFAE18}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

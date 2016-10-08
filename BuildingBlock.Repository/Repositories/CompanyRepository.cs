@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
-using BuildingBlock.Repository.Contracts;
-using BuildingBlock.Model;
+using ModelExecuter.Repository.Contracts;
+using ModelExecuter.Model;
 
-namespace BuildingBlock.Repository
+namespace ModelExecuter.Repository
 {
     public class CompanyRepository : EFRepository<Company>, ICompanyRepository
     {

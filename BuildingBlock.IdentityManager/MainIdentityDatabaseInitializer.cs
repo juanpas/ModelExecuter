@@ -1,5 +1,5 @@
-﻿using BuildingBlock.Defs;
-using BuildingBlock.IdentityModel;
+﻿using ModelExecuter.Defs;
+using ModelExecuter.IdentityModel;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.AspNet.Identity.Owin;
@@ -7,7 +7,7 @@ using System.Data;
 using System.Data.Entity;
 using System.Web;
 
-namespace BuildingBlock.IdentityManager
+namespace ModelExecuter.IdentityManager
 {
     // This is useful if you do not want to tear down the database each time you run the application.
     // public class ApplicationDbInitializer : DropCreateDatabaseAlways<MainIdentityDbContext>

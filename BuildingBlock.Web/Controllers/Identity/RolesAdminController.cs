@@ -1,4 +1,4 @@
-﻿using BuildingBlock.Web.Models;
+﻿using ModelExecuter.Web.Models;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.AspNet.Identity.EntityFramework;
@@ -8,10 +8,10 @@ using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
 using System.Collections.Generic;
-using BuildingBlock.IdentityModel;
-using BuildingBlock.IdentityManager;
+using ModelExecuter.IdentityModel;
+using ModelExecuter.IdentityManager;
 
-namespace BuildingBlock.Web.Controllers
+namespace ModelExecuter.Web.Controllers
 {
     [Authorize(Roles = "Admin")]
     public class RolesAdminController : Controller

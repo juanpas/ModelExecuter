@@ -1,11 +1,11 @@
-﻿using BuildingBlock.Model;
+﻿using ModelExecuter.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BuildingBlock.Repository.Contracts
+namespace ModelExecuter.Repository.Contracts
 {
     public interface ICityRepository : IRepository<City>
     {

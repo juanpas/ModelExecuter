@@ -1,5 +1,5 @@
-﻿using BuildingBlock.Repository;
-using BuildingBlock.Repository.Contracts;
+﻿using ModelExecuter.Repository;
+using ModelExecuter.Repository.Contracts;
 using Ninject;
 using System;
 using System.Collections.Generic;
@@ -10,7 +10,7 @@ using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
 
-namespace BuildingBlock.Web
+namespace ModelExecuter.Web
 {
     public class MvcApplication : System.Web.HttpApplication
     {

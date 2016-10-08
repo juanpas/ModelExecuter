@@ -5,7 +5,7 @@ using System.Web.Http.Dependencies;
 using Ninject;
 using Ninject.Syntax;
 
-namespace BuildingBlock.Web
+namespace ModelExecuter.Web
 {
     public class NinjectDependencyScope : IDependencyScope
     {

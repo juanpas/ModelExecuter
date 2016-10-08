@@ -1,8 +1,8 @@
-﻿using BuildingBlock.IdentityModel;
+﻿using ModelExecuter.IdentityModel;
 using Microsoft.AspNet.Identity.EntityFramework;
 using System.Data.Entity;
 
-namespace BuildingBlock.IdentityManager
+namespace ModelExecuter.IdentityManager
 {
     public class MainIdentityDbContext : IdentityDbContext<ApplicationUser>
     {

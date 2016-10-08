@@ -3,10 +3,10 @@ using System.Threading.Tasks;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin;
 using Microsoft.Owin.Security;
-using BuildingBlock.IdentityModel;
-using BuildingBlock.IdentityManager;
+using ModelExecuter.IdentityModel;
+using ModelExecuter.IdentityManager;
 
-namespace BuildingBlock.Web
+namespace ModelExecuter.Web
 {
     // Configure the application sign-in manager which is used in this application.
     public class ApplicationSignInManager : SignInManager<ApplicationUser, string>

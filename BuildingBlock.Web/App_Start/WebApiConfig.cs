@@ -1,6 +1,6 @@
 ﻿using System.Web.Http;
 
-namespace BuildingBlock.Web
+namespace ModelExecuter.Web
 {
     public static class WebApiConfig
     {

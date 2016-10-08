@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BuildingBlock.Web.Notifications
+namespace ModelExecuter.Web.Notifications
 {
     class NotificationsManager
     {

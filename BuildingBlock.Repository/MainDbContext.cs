@@ -1,6 +1,6 @@
-﻿using BuildingBlock.Model;
-using BuildingBlock.Repository.Configuration;
-using BuildingBlock.Repository.SampleData;
+﻿using ModelExecuter.Model;
+using ModelExecuter.Repository.Configuration;
+using ModelExecuter.Repository.SampleData;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BuildingBlock.Repository
+namespace ModelExecuter.Repository
 {
     public class MainDbContext : DbContext
     {

@@ -1,7 +1,7 @@
-﻿using BuildingBlock.IdentityManager;
-using BuildingBlock.Model;
-using BuildingBlock.Repository.Contracts;
-using BuildingBlock.Web.Models;
+﻿using ModelExecuter.IdentityManager;
+using ModelExecuter.Model;
+using ModelExecuter.Repository.Contracts;
+using ModelExecuter.Web.Models;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using System;
@@ -10,7 +10,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace BuildingBlock.Web.Controllers
+namespace ModelExecuter.Web.Controllers
 {
     public abstract class BBController : Controller
     {

@@ -3,9 +3,9 @@ using System.Data;
 using System.Data.Entity;
 using System.Data.Entity.Infrastructure;
 using System.Linq;
-using BuildingBlock.Repository.Contracts;
+using ModelExecuter.Repository.Contracts;
 
-namespace BuildingBlock.Repository
+namespace ModelExecuter.Repository
 {
     /// <summary>
     /// The EF-dependent, generic repository for data access

@@ -4,10 +4,10 @@ using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin;
 using Microsoft.Owin.Security.Cookies;
 using Owin;
-using BuildingBlock.IdentityModel;
-using BuildingBlock.IdentityManager;
+using ModelExecuter.IdentityModel;
+using ModelExecuter.IdentityManager;
 
-namespace BuildingBlock.Web
+namespace ModelExecuter.Web
 {
     public partial class Startup
     {

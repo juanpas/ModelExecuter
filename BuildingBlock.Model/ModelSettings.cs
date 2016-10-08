@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using static BuildingBlock.Defs.Enums;
+using static ModelExecuter.Defs.Enums;
 
-namespace BuildingBlock.Model
+namespace ModelExecuter.Model
 {
     [AttributeUsage(AttributeTargets.Property)]
     public class LocalizationCodeAttribute : System.Attribute

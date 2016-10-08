@@ -1,5 +1,5 @@
 ﻿using System;
-using BuildingBlock.Defs;
+using ModelExecuter.Defs;
 using System.IO;
 using System.Net.Http;
 
@@ -8,7 +8,7 @@ using Microsoft.WindowsAzure.Storage; // Namespaces for Storage Client Library
 using Microsoft.WindowsAzure.Storage.Blob;
 using Microsoft.WindowsAzure.Storage.File;
 
-namespace BuildingBlock.FilePersistence
+namespace ModelExecuter.FilePersistence
 {
     internal class AzureBlobPersistenceSystem : PersistenceSystem, IPersistenceSystem
     {

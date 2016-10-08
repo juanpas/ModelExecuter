@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BuildingBlock.IdentityManager
+namespace ModelExecuter.IdentityManager
 {
     public class EmailService : IIdentityMessageService
     {

@@ -1,10 +1,10 @@
 ﻿using System;
-using BuildingBlock.Defs;
-using static BuildingBlock.Defs.Enums;
+using ModelExecuter.Defs;
+using static ModelExecuter.Defs.Enums;
 using System.Net;
 using System.IO;
 
-namespace BuildingBlock.FilePersistence
+namespace ModelExecuter.FilePersistence
 {
     internal class PersistenceSystem
     {

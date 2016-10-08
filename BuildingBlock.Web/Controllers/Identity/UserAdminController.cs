@@ -1,8 +1,8 @@
-﻿using BuildingBlock.IdentityManager;
-using BuildingBlock.IdentityModel;
-using BuildingBlock.Model;
-using BuildingBlock.Repository.Contracts;
-using BuildingBlock.Web.Models;
+﻿using ModelExecuter.IdentityManager;
+using ModelExecuter.IdentityModel;
+using ModelExecuter.Model;
+using ModelExecuter.Repository.Contracts;
+using ModelExecuter.Web.Models;
 using Microsoft.AspNet.Identity.Owin;
 using System;
 using System.Data.Entity;
@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
 
-namespace BuildingBlock.Web.Controllers
+namespace ModelExecuter.Web.Controllers
 {
     [Authorize(Roles = "Admin")]
     public class UsersAdminController : BBController

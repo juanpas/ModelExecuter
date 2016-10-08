@@ -4,9 +4,9 @@ using System.Data.Entity.ModelConfiguration;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using BuildingBlock.Model;
+using ModelExecuter.Model;
 
-namespace BuildingBlock.Repository.Configuration
+namespace ModelExecuter.Repository.Configuration
 {
     public class CityConfiguration : EntityTypeConfiguration<City>
     {

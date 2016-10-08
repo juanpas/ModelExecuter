@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BuildingBlock.Model
+namespace ModelExecuter.Model
 {
     public class ParameterCategory
     {

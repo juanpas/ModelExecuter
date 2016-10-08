@@ -7,8 +7,8 @@
     <ProjectGuid>{7136053B-FEBE-4BC6-8B71-E8F9226872A0}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BuildingBlock.IdentityManager</RootNamespace>
-    <AssemblyName>BuildingBlock.IdentityManager</AssemblyName>
+    <RootNamespace>ModelExecuter.IdentityManager</RootNamespace>
+    <AssemblyName>ModelExecuter.IdentityManager</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
@@ -104,13 +104,13 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BuildingBlock.Defs\BuildingBlock.Defs.csproj">
+    <ProjectReference Include="..\BuildingBlock.Defs\ModelExecuter.Defs.csproj">
       <Project>{189f1c3b-5fc4-4db5-9b70-cdb035066500}</Project>
-      <Name>BuildingBlock.Defs</Name>
+      <Name>ModelExecuter.Defs</Name>
     </ProjectReference>
-    <ProjectReference Include="..\BuildingBlock.IdentityModel\BuildingBlock.IdentityModel.csproj">
+    <ProjectReference Include="..\BuildingBlock.IdentityModel\ModelExecuter.IdentityModel.csproj">
       <Project>{e9a4998e-c829-46f0-9f4d-f241136f56f4}</Project>
-      <Name>BuildingBlock.IdentityModel</Name>
+      <Name>ModelExecuter.IdentityModel</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Mvc;
 
-namespace BuildingBlock.Web
+namespace ModelExecuter.Web
 {
     public class FilterConfig
     {

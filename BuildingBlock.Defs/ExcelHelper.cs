@@ -1,7 +1,7 @@
 ﻿using System.Data;
 using Excel = Aspose.Cells;
 
-namespace BuildingBlock.Defs
+namespace ModelExecuter.Defs
 {
     public static class ExcelHelper
     {

@@ -8,7 +8,7 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BuildingBlock.Defs
+namespace ModelExecuter.Defs
 {
     public static class Utils
     {

@@ -1,8 +1,8 @@
 ﻿using System;
-using BuildingBlock.Repository.Contracts;
-using BuildingBlock.Model;
+using ModelExecuter.Repository.Contracts;
+using ModelExecuter.Model;
 
-namespace BuildingBlock.Repository
+namespace ModelExecuter.Repository
 {
     /// <summary>
     /// The "Unit of Work"

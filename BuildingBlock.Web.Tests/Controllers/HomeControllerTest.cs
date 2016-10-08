@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Web.Mvc;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using BuildingBlock.Web;
-using BuildingBlock.Web.Controllers;
+using ModelExecuter.Web;
+using ModelExecuter.Web.Controllers;
 
-namespace BuildingBlock.Web.Tests.Controllers
+namespace ModelExecuter.Web.Tests.Controllers
 {
     [TestClass]
     public class HomeControllerTest

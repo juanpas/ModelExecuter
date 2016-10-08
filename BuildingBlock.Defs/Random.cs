@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BuildingBlock.Defs
+namespace ModelExecuter.Defs
 {
     public class Random
     {

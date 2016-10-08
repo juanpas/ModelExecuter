@@ -5,7 +5,7 @@ using System.Web;
 using Microsoft.AspNet.SignalR;
 using System.Threading.Tasks;
 
-namespace BuildingBlock.Web.Notifications
+namespace ModelExecuter.Web.Notifications
 {
     public class NotificationsHub : Hub
     {

@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.Web.Mvc;
 
-namespace BuildingBlock.Web.Models
+namespace ModelExecuter.Web.Models
 {
     public class RoleViewModel
     {
