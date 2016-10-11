@@ -45,6 +45,10 @@ namespace ModelExecuter.Repository
         public ICityRepository Cities { get { return GetRepo<ICityRepository>(); } }
         public ICompanyRepository Companies { get { return GetRepo<ICompanyRepository>(); } }
 
+        public IRepository<MetadataItemType> MetadataItemTypes { get { return GetStandardRepo<MetadataItemType>(); } }
+        public IMetadataItemRepository MetadataItems { get { return GetRepo<IMetadataItemRepository>(); } }
+        public IModelRepository Models { get { return GetRepo<IModelRepository>(); } }
+        public IViewRepository Views { get { return GetRepo<IViewRepository>(); } }
 
         /// <summary>
         /// Save pending changes to the database

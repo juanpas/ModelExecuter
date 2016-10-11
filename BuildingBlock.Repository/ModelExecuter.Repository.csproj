@@ -59,12 +59,16 @@
   <ItemGroup>
     <Compile Include="Configuration\CompanyConfiguration.cs" />
     <Compile Include="Configuration\CityConfiguration.cs" />
+    <Compile Include="Configuration\MetadataItemConfiguration.cs" />
     <Compile Include="Configuration\TextResourceConfiguration.cs" />
     <Compile Include="Configuration\ParameterConfiguration.cs" />
     <Compile Include="Contracts\ICompanyRepository.cs" />
     <Compile Include="Contracts\IMainUow.cs" />
     <Compile Include="Contracts\ICityRepository.cs" />
     <Compile Include="Contracts\IFileRepository.cs" />
+    <Compile Include="Contracts\IViewRepository.cs" />
+    <Compile Include="Contracts\IModelRepository.cs" />
+    <Compile Include="Contracts\IMetadataItemRepository.cs" />
     <Compile Include="Contracts\IPhotoRepository.cs" />
     <Compile Include="Contracts\ITextResourceRepository.cs" />
     <Compile Include="Contracts\IParameterRepository.cs" />
@@ -77,6 +81,9 @@
     <Compile Include="Repositories\EFRepository.cs" />
     <Compile Include="Repositories\CityRepository.cs" />
     <Compile Include="Repositories\FileRepository.cs" />
+    <Compile Include="Repositories\ViewRepository.cs" />
+    <Compile Include="Repositories\ModelRepository.cs" />
+    <Compile Include="Repositories\MetadataItemRepository.cs" />
     <Compile Include="Repositories\PhotoRepository.cs" />
     <Compile Include="Repositories\TextResourceRepository.cs" />
     <Compile Include="Repositories\ParameterRepository.cs" />

@@ -28,6 +28,10 @@ namespace ModelExecuter.Repository
         public DbSet<Language> Languages { get; set; }
         public DbSet<TextResource> TextResources { get; set; }
 
+        public DbSet<MetadataItem> MetadataItems { get; set; }
+        public DbSet<MetadataItemType> MetadataItemTypes { get; set; }
+        public DbSet<Model.Model> Models { get; set; }
+        public DbSet<View> Views { get; set; }
 
         static MainDbContext()
         {
@@ -44,6 +48,7 @@ namespace ModelExecuter.Repository
             modelBuilder.Configurations.Add(new CityConfiguration());
             modelBuilder.Configurations.Add(new TextResourceConfiguration());
 
+            modelBuilder.Configurations.Add(new MetadataItemConfiguration());
 
         }
     }

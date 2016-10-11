@@ -40,6 +40,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="View.cs" />
+    <Compile Include="Model.cs" />
+    <Compile Include="MetadataItemType.cs" />
+    <Compile Include="MetadataItem.cs" />
     <Compile Include="Country.cs" />
     <Compile Include="City.cs" />
     <Compile Include="File.cs" />

@@ -38,6 +38,10 @@ namespace ModelExecuter.Repository
                     {typeof(ITextResourceRepository), dbContext => new TextResourceRepository(dbContext)},
                     {typeof(IFileRepository), dbContext => new FileRepository(dbContext)},
                     {typeof(IPhotoRepository), dbContext => new PhotoRepository(dbContext)},
+
+                    {typeof(IMetadataItemRepository), dbContext => new MetadataItemRepository(dbContext)},
+                    {typeof(IModelRepository), dbContext => new ModelRepository(dbContext)},
+                    {typeof(IViewRepository), dbContext => new ViewRepository(dbContext)},
                 };
         }
 

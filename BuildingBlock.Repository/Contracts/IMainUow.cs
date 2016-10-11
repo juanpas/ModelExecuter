@@ -21,5 +21,10 @@ namespace ModelExecuter.Repository.Contracts
         ICityRepository Cities { get; }
         ICompanyRepository Companies { get; }
 
+        IRepository<MetadataItemType> MetadataItemTypes { get; }
+        IMetadataItemRepository MetadataItems { get; }
+        IModelRepository Models { get; }
+        IViewRepository Views { get; }
+
     }
 }
